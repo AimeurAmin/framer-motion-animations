@@ -7,7 +7,8 @@ function Box4() {
       <motion.div className="box"
         animate={{
           scale: [1, 1.3, 1.3, 1, 1],
-          borderRadius: ["20%", "20%", "50%", "50%", "20%"]
+          borderRadius: ["20%", "20%", "50%", "50%", "20%"],
+          rotate: [0, 270, 270, 0]
         }}
         transition={{
           duration: 2
