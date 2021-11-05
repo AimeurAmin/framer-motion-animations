@@ -11,7 +11,13 @@ function Box2() {
         whileTap={{
           scale: 0.9
         }}
-        drag="x"
+        drag
+        dragConstraints={{
+          left: -20,
+          right: 400,
+          top: -100,
+          bottom: 300
+        }}
       ></motion.div>
     </div>
   )
