@@ -6,7 +6,11 @@ function Box1() {
     <div className="box-container">
       <motion.div className="box"
         animate={{
-          x: 1000
+          x: 1000,
+          opacity: 1
+        }}
+        initial={{
+          opacity: .1
         }}
       ></motion.div>
     </div>
