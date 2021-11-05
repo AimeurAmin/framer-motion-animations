@@ -15,6 +15,18 @@ function Box3() {
     }
   }
 
+  const listVariant = {
+    hidden: {
+     opacity: 0
+    },
+    visible: {
+      opacity: 1,
+      transition: {
+        delay: 1
+      }
+    }
+  }
+
   return (
     <div className="box-container">
       <motion.div className="box"
@@ -23,7 +35,10 @@ function Box3() {
         animate="visible"
       >
         {[1,2,3].map(box => (
-          <li key={box} className="boxItem"></li>
+          <motion.li key={box} className="boxItem"
+            variants={listVariant}
+            // no need to add initial="hidden" and animate="visible" cause the children of a motion tag always inherit those from the parent
+          ></motion.li>
         ))}
       </motion.div>
     </div>
