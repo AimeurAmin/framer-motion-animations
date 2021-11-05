@@ -10,7 +10,9 @@ function Box3() {
     visible: {
       x: 0,
       transition: {
-        delay: .5
+        delay: .5,
+        when: "beforeChildren", // tells parent to finish animating before children start animating
+        staggerChildren: .2 // time for each child to finish animate
       }
     }
   }
@@ -21,9 +23,6 @@ function Box3() {
     },
     visible: {
       opacity: 1,
-      transition: {
-        delay: 1
-      }
     }
   }
 
