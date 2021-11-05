@@ -7,7 +7,8 @@ function Box1() {
       <motion.div className="box"
         animate={{
           x: 1000,
-          opacity: 1
+          opacity: 1,
+          rotate: 360
         }}
         initial={{
           opacity: .1
