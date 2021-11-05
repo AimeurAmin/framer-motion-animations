@@ -14,7 +14,8 @@ function Box1() {
         }}
         transition={{
           type: "spring", // with spring type you use stifness instead of duration
-          stiffness: 60
+          stiffness: 60,
+          damping: 100
         }}
       ></motion.div>
     </div>
