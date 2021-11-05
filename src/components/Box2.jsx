@@ -11,7 +11,7 @@ function Box2() {
         whileTap={{
           scale: 0.9
         }}
-        drag
+        drag="x"
       ></motion.div>
     </div>
   )
