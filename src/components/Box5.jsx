@@ -21,8 +21,22 @@ function Box5() {
           })
         }}
       >Move Left</button>
-      <button>Circle</button>
-      <button>Square</button>
+      <button
+        onClick={() => {
+          control.start({
+            borderRadius: "50%",
+            transition: {duration: .5}
+          })
+        }}
+      >Circle</button>
+      <button
+        onClick={() => {
+          control.start({
+            borderRadius: 0,
+            transition: {duration: .5}
+          })
+        }}
+      >Square</button>
       <button>Stop</button>
       <motion.div className="box"
         animate={control}
