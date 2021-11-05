@@ -37,7 +37,9 @@ function Box5() {
           })
         }}
       >Square</button>
-      <button>Stop</button>
+      <button
+        onClick={() => { control.stop() }}
+      >Stop</button>
       <motion.div className="box"
         animate={control}
       ></motion.div>
