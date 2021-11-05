@@ -25,3 +25,12 @@
 p {
   margin-bottom: 1rem;
 }
+
+.boxItem {
+  width: 0.5rem;
+  height: 0.5rem;
+  padding: 2rem;
+  background-color: white;
+  list-style: none;
+  margin: 0.5rem;
+}

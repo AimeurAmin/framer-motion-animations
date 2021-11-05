@@ -12,7 +12,7 @@ function App() {
       <p>hover, click or drag the box</p>
       <Box2 />
 
-      <p>hover, click or drag the box</p>
+      <p>...</p>
       <Box3 />
     </div>
   );
