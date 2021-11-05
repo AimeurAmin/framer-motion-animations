@@ -12,6 +12,9 @@ function Box1() {
         initial={{
           opacity: .1
         }}
+        transition={{
+          duration: 1
+        }}
       ></motion.div>
     </div>
   )
