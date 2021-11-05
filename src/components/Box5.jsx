@@ -8,19 +8,19 @@ function Box5() {
       <button
         onClick={() => {
           control.start({
-            x: 1000,
-            transition: { duration: 1 }
-          })
-        }}
-      >Move Right</button>
-      <button
-        onClick={() => {
-          control.start({
             x: 0,
             transition: { duration: 1 }
           })
         }}
       >Move Left</button>
+      <button
+        onClick={() => {
+          control.start({
+            x: 1000,
+            transition: { duration: 1 }
+          })
+        }}
+      >Move Right</button>
       <button
         onClick={() => {
           control.start({
