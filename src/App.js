@@ -2,6 +2,7 @@ import './App.css';
 import Box1 from './components/Box1';
 import Box2 from './components/Box2';
 import Box3 from './components/Box3';
+import Box4 from './components/Box4';
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
 
       <p>...</p>
       <Box3 />
+
+      <Box4 />
     </div>
   );
 }
