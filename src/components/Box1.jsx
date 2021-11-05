@@ -13,8 +13,8 @@ function Box1() {
           opacity: .1
         }}
         transition={{
-          type:"tween",
-          duration: 1
+          type: "spring", // with spring type you use stifness instead of duration
+          stiffness: 60
         }}
       ></motion.div>
     </div>
