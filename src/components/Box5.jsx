@@ -9,7 +9,7 @@ function Box5() {
         onClick={() => {
           control.start({
             x: 0,
-            transition: { duration: 1 }
+            transition: { duration: 2 }
           })
         }}
       >Move Left</button>
@@ -17,7 +17,7 @@ function Box5() {
         onClick={() => {
           control.start({
             x: 1000,
-            transition: { duration: 1 }
+            transition: { duration: 2 }
           })
         }}
       >Move Right</button>
@@ -25,7 +25,7 @@ function Box5() {
         onClick={() => {
           control.start({
             borderRadius: "50%",
-            transition: {duration: .5}
+            transition: {duration: 1}
           })
         }}
       >Circle</button>
@@ -33,7 +33,7 @@ function Box5() {
         onClick={() => {
           control.start({
             borderRadius: 0,
-            transition: {duration: .5}
+            transition: {duration: 1}
           })
         }}
       >Square</button>
