@@ -1,14 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { motion } from 'framer-motion';
 
 function Box1() {
+
+  const [isAnimating, setIsAnimating] = useState(false);
+
   return (
     <div className="box-container">
       <motion.div className="box"
         animate={{
-          x: 1000,
-          opacity: 1,
-          rotate: 360
+          x: isAnimating? 1000 : 0,
+          opacity: isAnimating? 1 : .5,
+          rotate: isAnimating? 360 : 0
         }}
         initial={{
           opacity: .1
@@ -17,6 +20,7 @@ function Box1() {
           type: "spring", // with spring type you use stifness instead of duration
           stiffness: 60
         }}
+        onClick={() => setIsAnimating(!isAnimating)}
       ></motion.div>
     </div>
   )
