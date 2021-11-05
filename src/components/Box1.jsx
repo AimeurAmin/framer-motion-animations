@@ -1,9 +1,14 @@
 import React from 'react'
+import { motion } from 'framer-motion';
 
 function Box1() {
   return (
     <div className="box-container">
-      <div className="box"></div>
+      <motion.div className="box"
+        animate={{
+          x: 1000
+        }}
+      ></motion.div>
     </div>
   )
 }
