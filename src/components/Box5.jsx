@@ -38,6 +38,14 @@ function Box5() {
         }}
       >Square</button>
       <button
+        onClick={() => {
+          control.start({
+            rotate: [360, 0],
+            transition: { duration: 2 }
+          })
+        }}
+      >Rotate</button>
+      <button
         onClick={() => { control.stop() }}
       >Stop</button>
       <motion.div className="box"
