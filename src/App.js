@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <p>click the box</p>
       <Box1 />
-      <p>hover or drag the box</p>
+      <p>hover, click or drag the box</p>
       <Box2 />
     </div>
   );
