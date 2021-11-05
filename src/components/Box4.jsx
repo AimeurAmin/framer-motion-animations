@@ -6,7 +6,8 @@ function Box4() {
     <div className="box-container">
       <motion.div className="box"
         animate={{
-          scale: [1, .2, .5, .6, .7, .8, .9, 1]
+          scale: [1, 1.3, 1.3, 1, 1],
+          borderRadius: ["20%", "20%", "50%", "50%", "20%"]
         }}
         transition={{
           duration: 2

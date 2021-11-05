@@ -16,7 +16,6 @@ function App() {
       <p>...</p>
       <Box3 />
 
-      <p>...</p>
       <Box4 />
     </div>
   );
